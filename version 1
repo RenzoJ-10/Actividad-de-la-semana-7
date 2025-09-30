@@ -1,0 +1,23 @@
+ int opcion;
+
+ // G6: Definición de la variable
+ do
+ {
+     // G7: Mostrar menú
+     Console.WriteLine("1.-Calcular Suma");
+     Console.WriteLine("2.-Calcular Resta");
+     Console.WriteLine("3.-Salir");
+     Console.Write("Elija una opción (1-3): ");
+
+     opcion = int.Parse(Console.ReadLine());
+
+     // G8: Validación
+     if (opcion < 1 || opcion > 3)
+     {
+         Console.WriteLine("Opción inválida. Intente nuevamente.");
+     }
+
+ } while (opcion < 1 || opcion > 3); // G9: Condición de repetición
+
+ // G10: Mensaje final
+ Console.WriteLine("\nUsted eligió la opción: " + opcion);
